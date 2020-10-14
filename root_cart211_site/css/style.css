@@ -1,0 +1,221 @@
+/* @import */
+@import 'https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap';
+
+/* Universal selector */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  background-color: #801B01;
+  color: #ffb19e;
+  font-size: 12px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/* ALl h1 */
+h1 {
+  border-bottom: 5px solid #d12900;
+}
+
+/* All headers */
+header {
+  background-color: #d12900;
+  padding: 1%;
+}
+
+header h1 {
+  font-size: 6em;
+  font-weight: 900;
+}
+
+header h2 {
+  font-size: 3em;
+  font-weight: bold;
+}
+
+/* All <nav> */
+nav {
+  background-color: #FF824D;
+  text-transform: uppercase;
+  font-size: 2em;
+  /* "Centers" text */
+  display: flex;
+  justify-content: flex-start;
+}
+
+nav a:link {
+  color: #2e0900;
+  padding: 1% 2%;
+  /* Removes link underline */
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #6e0000;
+}
+
+nav a:hover {
+  color: #ffb19e;
+  background-color: #d12900
+}
+
+nav a.active {
+  color: #ffb19e;
+  background-color: #d12900;
+}
+
+/* All other <a> links */
+a {
+  font-size: 18px;
+}
+
+a:link {
+  color: #d9aba0;
+}
+
+a:visited {
+  color: #d9aba0;
+}
+
+a:hover {
+  color: #e39d07;
+}
+
+a:active {
+  color: #ffffff;
+}
+
+/* All articles */
+article {
+padding: 1%;
+background-color: rgba(0, 0, 0, 75%);
+border: 1px solid #ffb19e;
+margin: 2% 1%;
+}
+
+article h1 {
+  font-size: 4em;
+  letter-spacing: -2px;
+}
+
+/* Weekly Articles */
+section.weeklyArticle {
+  /* display: inline-block; */
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}
+
+.weeklyArticle article {
+  width: 30%;
+}
+
+.weeklyArticle h1 {
+  /* border-bottom: 5px solid #d12900; */
+}
+
+.weeklyArticle p {
+  padding-top: 2%;
+}
+
+/* All paragraphs */
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-top: 1%;
+}
+
+/* All footers */
+footer {
+  font-size: 18px;
+  padding: 1%;
+  font-style: italic;
+  background-color: #d12900;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* Index Page */
+
+section.indexSection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.indexArticle p {
+  width: 100%;
+  font-size: 20px;
+}
+
+article.indexImageArticle {
+  width: 30%;
+  padding-bottom: .5%;
+  float: left;
+}
+
+.indexFigure img {
+  width: 100%;
+}
+
+/* All figcaptions */
+figcaption {
+  font-style: italic;
+  font-size: 15px;
+}
+
+/* HTML Reading Pages */
+body.htmlReadingBody {
+  background-image: url("../images/SiteBG2.png");
+}
+
+section.htmlReadingSection {
+  display: flex;
+  justify-content: center;
+}
+
+header.htmlReadingHeader {
+  background-color: rgba(0, 0, 0, 0);
+  text-align: center;
+}
+
+.htmlReadingHeader h1 {
+  border-bottom: rgba(0, 0, 0, 0);
+}
+
+article.htmlReadingArticle {
+  width: 50%;
+}
+
+.htmlReadingArticle h1 {
+  /* border-bottom: 5px solid #d12900; */
+  margin-bottom: 1%;
+}
+
+.htmlReadingArticle p {
+  line-height: 2;
+}
+
+nav.htmlReadingExit {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.htmlReadingExit a {
+  font-size: 2em;
+}
+
+.readingMusicButton {
+  color: #ffb19e;
+  background-color: black;
+  width: 20%;
+  font-size: 2em;
+  font-family: 'Raleway', sans-serif;
+  border: 1px solid #ffb19e;
+  padding: .5%;
+  margin: 1%;
+}

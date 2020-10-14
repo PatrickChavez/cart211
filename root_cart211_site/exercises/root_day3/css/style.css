@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #420000;
+  font-family: verdana, arial, sans-serif;
+  color: #ffbd99;
+}
+
+header {
+  background-color: #993600;
+  color: #ffbd99;
+  padding: 2%;
+  animation-duration: 6s;
+  animation-name: slideUp;
+}
+
+/* specificity targets elements inside of parents */
+header h1 {
+  font-size: 58px;
+  text-transform: uppercase;
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+header h2 {
+  font-size: 22px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  animation-duration: 4s;
+  animation-name: fadeIn;
+}
+
+nav {
+  background-color: #ffbd99;
+  text-transform: uppercase;
+}
+
+nav a:link {
+  background-color: #ffbd99;
+  color: #222;
+  padding: 1% 2%;
+  display: inline-block;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #401600;
+}
+
+nav a:hover {
+  color: #ffbd99;
+  background-color: #993600;
+}
+
+nav a.active {
+  color: #ffbd99;
+  background-color: #993600;
+}
+
+article {
+  padding: 2%;
+}
+
+article h1 {
+  font-size: 38px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article h2 {
+  font-size: 28px;
+  text-transform: capitalize;
+  margin-bottom: .5%;
+}
+
+article p {
+  padding: 1%;
+  margin-bottom: 1%;
+  font-size: 18px;
+  line-height: 24px;
+  background-color: rgba(0, 0, 0, 75%);
+  border: 1px solid #ffbd99;
+}
+
+.indexParagraph {
+  padding-bottom: 2%;
+}
+
+/* Classes start with a . and can be used many times on the page */
+.pull_quote {
+  background-color: #993600;
+  color: #ffbd99;
+  font-size: 22px;
+  padding: 2%;
+  margin: 1% 4% 1%;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  border-left: solid 20px #ffbd99;
+  animation-duration: 8s;
+  animation-name: colorChange;
+  animation-iteration-count: infinite;
+}
+
+figure {
+  margin-bottom: 1%;
+  width: 20%;
+  float: left;
+  margin-right: 2%;
+  border-top: 1px solid #ffbd99;
+  border-left: 1px solid #ffbd99;
+}
+
+figure img {
+  /* Use % when you want a responsive img */
+  width: 100%
+}
+
+figcaption {
+  font-size: 24px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  text-align: center;
+}
+
+.assignmentFigure {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 75%);
+  border: 1px solid #ffbd99;
+  float: none;
+  padding-bottom: 1%;
+  line-height: 1.5;
+}
+
+.readingsFigure {
+  width: 30%;
+  background-color: rgba(0, 0, 0, 75%);
+  border: 1px solid #ffbd99;
+  float: none;
+  padding-bottom: 1%;
+  line-height: 1.5;
+  margin: 2% 35%
+}
+
+.readingsImage {
+  animation-duration: 10s;
+  animation-name: rotateImage;
+  animation-iteration-count: infinite;
+}
+
+footer {
+  padding: 2%;
+  background-color: #993600;
+  color: #ffbd99;
+  font-size: 16px;
+  font-family: georgia, times, serif;
+  font-style: italic;
+  /* text-align: center; */
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    margin-bottom: 100%;
+    height: 300%
+  }
+
+  to {
+    margin-bottom: 0;
+    height: 100%
+  }
+}
+
+@keyframes colorChange {
+  from {
+    color: crimson;
+  }
+
+  to {
+    color: beige;
+  }
+}
+
+@keyframes rotateImage {
+  from {
+    transform: rotate(0.1turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}

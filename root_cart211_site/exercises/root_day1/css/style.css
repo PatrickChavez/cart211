@@ -1,0 +1,45 @@
+/* Changing the webpage font */
+body {
+  font-family: sans-serif;
+  /* Changing the webpage background color */
+  background: darkgray;
+}
+
+/* Changing the text color of the characters */
+/* Geo Red */
+#geoRedText {
+  color: red;
+}
+
+/* Geo Blue */
+#geoBlueText {
+  color: blue;
+}
+
+/* Geo Yellow */
+#geoYellowText {
+  color: yellow;
+}
+
+/* The Geo Ranger Ensemble */
+/* The text color will change every second and loop */
+/* Guide found here: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations */
+#geoGroup {
+  animation-duration: 3s;
+  animation-name: colorChange;
+  animation-iteration-count: infinite;
+}
+
+@keyframes colorChange {
+  from {
+    color: red;
+  }
+
+  50% {
+    color: blue;
+  }
+
+  to {
+    color: yellow;
+  }
+}
