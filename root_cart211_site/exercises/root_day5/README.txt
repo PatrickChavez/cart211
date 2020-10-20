@@ -1,0 +1,1 @@
+This is a recreation of the "Musica Viva" poster by Josef Müller-Brockmann (1959)

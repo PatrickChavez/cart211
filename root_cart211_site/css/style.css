@@ -37,6 +37,32 @@ header h2 {
   font-weight: bold;
 }
 
+/* mainHeader class */
+.mainHeader h1 {
+  font-size: 4em;
+  font-weight: 900;
+}
+
+.mainHeader a {
+  text-decoration: none;
+}
+
+.mainHeader a:link {
+  color: #ffb19e;
+}
+
+.mainHeader a:visited {
+  color: #ffb19e;
+}
+
+.mainHeader a:hover {
+  color: #ffb19e;
+}
+
+.mainHeader a:active {
+  color: #ffb19e;
+}
+
 /* All <nav> */
 nav {
   background-color: #FF824D;
