@@ -131,13 +131,18 @@ article h1 {
 /* Weekly Articles */
 section.weeklyArticle {
   /* display: inline-block; */
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
+  /* display: flex; */
+  /* justify-content: space-between; */
+  /* align-items: stretch; */
+  margin: 1.5vmin;
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  grid-template-rows: 2fr;
+  grid-gap: 2vmin;
 }
 
 .weeklyArticle article {
-  width: 30%;
+  /* width: 80%; */
 }
 
 .weeklyArticle h1 {
