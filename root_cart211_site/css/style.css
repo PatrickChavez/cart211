@@ -97,6 +97,7 @@ nav a.active {
 /* All other <a> links */
 a {
   font-size: 18px;
+  transition: all .5s;
 }
 
 a:link {
