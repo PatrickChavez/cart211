@@ -1,0 +1,507 @@
+/* Importing fonts */
+/* Hind Siliguri */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;700&display=swap');
+/* Playfair Display */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,900;1,400;1,900&display=swap');
+
+/* Universal Selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0F153C;
+  color: white;
+}
+
+/* h1 */
+h1 {
+  font-size: 5em;
+  text-align: center;
+  margin: 2%;
+}
+
+/* All a:links */
+a:link {
+  color: white;
+  transition: all .3s;
+}
+
+a:visited {
+  color: white;
+}
+
+a:hover {
+  color: yellow;
+}
+
+/* Footer */
+footer {
+  font-size: 1.5em;
+  padding: .5%;
+  margin-top: 1%;
+  font-style: italic;
+  font-family: "Hind Siliguri", sans-serif;
+  background: #BBC0DD;
+  color: #0F153C;
+  display: flex;
+  align-items: flex-end;
+}
+
+/* img */
+img {
+  width: 50%;
+  height: 50%;
+  margin: 5%;
+}
+
+
+/* The navigation bar */
+/* Code based on week 9 exercise */
+
+/* The logo */
+.logo img {
+  /* padding: 4px; */
+  margin: .5%;
+  width: 7em;
+  height: 7em;
+  position: fixed;
+  z-index: 9;
+}
+
+/* Hover Pulse Shrink code from Ian Lunn */
+.logo img:hover, .logo img:focus, .logo img:active {
+  animation-name: hvr-pulse-shrink;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.mainNavigation {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  background-color: #BBC0DD;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.navigationContent {
+	position: relative;
+  width: 100%;
+	height: 100%;
+	display: flex;
+	flex-flow: row wrap;
+}
+
+.mainNavigation a {
+  position: relative;
+  padding-right: 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+  font-size: 4vmax;
+  text-align: right;
+  border: 3px solid #0F153C;
+  color: #0F153C;
+  flex: 1 100%;
+  transition: all 0.5s;
+}
+
+.mainNavigation a:hover{
+  background: #0F153C;
+  color: #BBC0DD;
+}
+
+#closeButton {
+  position: absolute;
+	z-index: 99;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  padding: 8px;
+  transition: all 0.3s;
+}
+
+#closeButton:hover {
+  color: #0F153C;
+}
+
+#navigationIcon {
+	cursor:pointer;
+	position:fixed;
+	top:20px;
+	right:20px;
+	z-index: 9;
+  transition: all 0.3s;
+}
+
+#navigationIcon:hover {
+  color: #BBC0DD;
+}
+
+/* Nav Icon Warm */
+/* Use Javascript to change the color palette (?) */
+
+/* The page arrows */
+.pageArrows {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 1vmin;
+  text-align: center;
+}
+
+#leftArrow,
+#rightArrow {
+  transition: all .5s;
+}
+
+#leftArrow:hover {
+  color: #BBC0DD;
+}
+
+#rightArrow:hover {
+  color: #BBC0DD;
+}
+
+/* First intro section */
+.introFirstSection {
+  width: 100%;
+  height: 100vh;
+  background: black;
+  color: #BBC0DD;
+  font-size: 1.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+}
+
+.introText {
+  font-size: 7em;
+  color: #BBC0DD;
+  font-family: "Playfair Display", serif;
+}
+
+#downArrow {
+  animation-name: bounceAnimation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+
+.pageImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  flex-direction: column;
+}
+
+.storyText {
+  padding: 1% 2%;
+  margin: 1%;
+  font-size: 3em;
+  font-family: "Playfair Display", serif;
+  border: 3px solid #BBC0DD;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* Intro */
+.intro4 {
+  width: 85%;
+  height: 85%;
+}
+
+/* Chapter 1 */
+
+/* Hub interaction clarity */
+/* https://stackoverflow.com/questions/48108879/how-to-make-hover-state-on-row-table-with-css-grid-layout */
+.hubSection {
+display: grid;
+grid-template-columns: repeat(4, 2fr);
+grid-gap: 2vmin;
+position: relative;
+
+background: url("../assets/images/room2.png") no-repeat;
+background-size: 100% 100vh;
+background-position: center;
+padding: 0.5%;
+margin: 0.5% 1%;
+width: 98%;
+height: 100vh;
+}
+
+.roomLetter {
+  grid-column: 1 / 2;
+  transition: all .5s;
+}
+
+.roomLetter img {
+  width: 5%;
+  height: auto;
+  transform: rotate(-45deg);
+  position: absolute;
+  top: 240px;
+  left: 50px;
+  transition: all .5s;
+  cursor: pointer;
+  z-index: 5;
+}
+
+/* Week 10 class code */
+.zoom img {
+      /* background: teal;
+      box-shadow: 2px 2px 20px red; */
+      width: 15%;
+      position:absolute;
+      top:50%; left:50%;
+      transform: translate(-50%, -50%) scale(2, 2) rotate(0deg);
+    }
+
+
+.roomCurtain {
+  grid-column: 2 / 3;
+  /* position: relative; */
+  transition: all .5s;
+}
+
+.roomCurtain img {
+  width: 105%;
+  height: auto;
+  transform: translate(-26px, 76px);
+  /* top: 26px; left: 73px; */
+}
+
+.pullCurtain img {
+  width: 105%;
+  height: auto;
+  position: absolute;
+  /* transform: translate(-26px, 76px); */
+  top: 26px; left: 73px;
+  z-index: 1;
+  transition: all.5s;
+}
+
+.pullCurtain:hover {
+  animation: slide-right 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.roomMonster img {
+  width: 105%;
+  height: auto;
+  transform: translate(-26px, 76px);
+  z-index: -1;
+}
+
+.roomGame {
+  grid-column: 3 / 4;
+}
+
+.roomGame img {
+  width: 50%;
+  height: auto;
+  opacity: 0;
+  transition: all .5s;
+  transform: translate(70px, 300px);
+}
+
+.roomGame img:hover {
+  opacity: 1;
+  transform: translateY(-100px);
+}
+
+.doorBlur {
+  grid-column: 4 / 5;
+  transition: .5s;
+}
+
+.doorBlur img {
+  width: 95%;
+  height: auto;
+  transform: translate(-5px, 155px);
+  /* top: 20px; left: 5px; */
+}
+
+.doorBlur:hover {
+  /* grid-column: 4 / 5; */
+  filter: blur(5px);
+}
+
+/* Chapter 4 */
+.chapter4Body {
+  background: #BBC0DD;
+}
+
+/* Ending */
+.endingStart {
+  padding: 0;
+  margin: 0;
+  color: #E5AB00;
+  background: black;
+  width: 100%;
+  height: 100vh;
+  font-family: "Playfair Display", serif;
+  font-size: 4em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 2vmin;
+}
+
+/* Cubic Bezier code from https://cubic-bezier.com/*/
+.endingStartText {
+  padding: 1%;
+  margin: 1%;
+  grid-column: 1 / 3;
+  text-align: right;
+  font-style: italic;
+  animation-name: moveRight;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.26,.1,.74,1.16);
+}
+
+.endingStartImage {
+  width: 90%;
+  height: 50%;
+  background: #E5AB00;
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+/* Cubic Bezier code from https://cubic-bezier.com/*/
+.endingStartText2 {
+  padding: 1%;
+  margin: 1%;
+  grid-column: 1 / 3;
+  grid-row: 2;
+  text-align: right;
+  font-style: italic;
+  animation-name: moveRight;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(.26,.1,.74,1.16);
+}
+
+.endingStartImage2 {
+  width: 90%;
+  height: 50%;
+  background: #E5AB00;
+  grid-column: 1 / 1;
+  grid-row: 1 / 1;
+}
+
+/* About/Links page */
+.aboutContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: wrap;
+  flex-direction: column;
+  font-family: "Hind Siliguri", sans-serif;
+  font-weight: 300;
+}
+
+.aboutArticle {
+  width: 80%;
+  /* padding: 2%; */
+  margin: 1%;
+  text-align: center;
+  line-height: 2;
+  background: rgba(0, 0, 0);
+  border: 2px solid #cf3a04;
+  font-size: 1.5vmax;
+  /* font-weight: lighter; */
+}
+
+.aboutArticle h1 {
+  border-bottom: 2px solid #cf3a04;
+  font-size: 3em;
+}
+
+.aboutArticle p {
+  text-align: left;
+  margin: 2% 1%;
+  padding-left: 1%;
+  font-weight: lighter;
+  font-size: 4vmin;
+}
+
+/* "Warm" sections */
+.warmBody {
+  background: #E5AB00;
+}
+
+/* Page Images */
+/* Code from week 9 examples */
+.pageImages img {
+  opacity: 0;
+  transform: translateY(20px);
+  /* transform: translateY(4em) rotateZ(-5deg); */
+  transition: opacity .5s 1s ease-out,
+              transform 1s .5s ease-out;
+  /* transition: transform 4s .25s cubic-bezier(0,1,.3,1),
+              opacity .3s .25s ease-out; */
+  /* transition: transform 1s .5s ease-out; */
+  will-change: transform, opacity;
+}
+
+.pageImages img.is-visible {
+  opacity: 1;
+  transform: translateY(0px);
+  /* transform: rotateZ(-2deg); */
+}
+
+/* Font Awesome icons */
+i.far, i.fas {
+  color: white;
+  font-size: 4em;
+}
+
+/* Animations */
+@keyframes bounceAnimation {
+  from {
+    height: 10%;
+  }
+
+  50% {
+    height: 0%;
+  }
+
+  to {
+    height: 10%;
+  }
+}
+
+@keyframes moveRight {
+  from {
+    width: 1%;
+  }
+
+  to {
+    width: 95%;
+  }
+}
+
+/* Code from Animista */
+@keyframes slide-right {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+/* Hover Pulse Shrink code from Ian Lunn */
+@keyframes hvr-pulse-shrink {
+  to {
+    transform: scale(0.9);
+  }
