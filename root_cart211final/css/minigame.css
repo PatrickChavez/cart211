@@ -1,0 +1,10 @@
+/* Setting the background */
+body {
+  background: url("../assets/images/Chapter2Minigame/MidSiteBG.png") no-repeat fixed center center;
+}
+
+.game img {
+  width: 67%;
+  height: 67%;
+  margin-left: 15%;
+}
