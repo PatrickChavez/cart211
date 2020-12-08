@@ -181,11 +181,22 @@ function keyPressed() {
   }
 }
 
+// endingState
+//
+// Displays the "ending" as black screen
+function endingState() {
+  currentState === "ENDING";
+  gameplayMusic.pause();
+  background("#0F153C");
+}
+
 // webpageChange
 //
 // The weppage changes once the score reaches a certain value
 function webpageChange() {
   if (gameScore === -4) {
+    // Show a black screen
+    endingState();
     // Go to another HTML
     location.href = "chapter3.html";
   }
