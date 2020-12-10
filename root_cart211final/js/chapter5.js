@@ -11,9 +11,9 @@ curtainImage.onclick = function() {
   let imageSrc = curtainImage.getAttribute("src");
 
   if (imageSrc === "assets/images/Chapter5Trapped/trapped4.png") {
-    curtainImage.setAttribute("src", "assets/images/Chapter5Trapped/trapped5.png");
+    curtainImage.setAttribute("src", "assets/images/Chapter5Trapped/trapped5.gif");
     openCurtainSFX.play();
-  } else if (imageSrc === "assets/images/Chapter5Trapped/trapped5.png") {
+  } else if (imageSrc === "assets/images/Chapter5Trapped/trapped5.gif") {
     curtainImage.setAttribute("src", "assets/images/Chapter5Trapped/trapped6.png");
     curtainImage.style.cursor = "default";
     closeCurtainSFX.play();

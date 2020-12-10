@@ -93,7 +93,7 @@ function preload() {
 function setup() {
   // Repositioning the canvas
   let cnv = createCanvas(540, 340);
-  cnv.position(393, -600, "relative");
+  cnv.position(393, -648, "relative");
 
 
   // The objects

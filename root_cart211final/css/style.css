@@ -11,8 +11,14 @@
   box-sizing: border-box;
 }
 
+/* Parallax scrolling background code from w3schools */
 body {
-  background: #0F153C;
+  /* background: #0F153C; */
+  background: url("../assets/images/LettersBGCold.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   color: white;
   font-family: "Playfair Display", serif;
   user-select: none;
@@ -174,6 +180,7 @@ figcaption {
 #leftArrow,
 #rightArrow {
   transition: all .5s;
+  font-size: 7em;
 }
 
 #leftArrow:hover,
@@ -182,8 +189,14 @@ figcaption {
 }
 
 /* "Warm" sections */
+/* Parallax scrolling background code from w3schools */
 .warmBody {
-  background: #B46000;
+  /* background: #B46000; */
+  background: url("../assets/images/LettersBGWarm.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /* Page Images */
@@ -346,7 +359,7 @@ i.far, i.fas {
 .roomGame img {
   width: 10%;
   height: auto;
-  opacity: 0;
+  opacity: 0.1;
   transition: all .5s;
   position: absolute;
   top: 320px;
@@ -396,7 +409,51 @@ i.far, i.fas {
 
 /* Chapter 6 */
 .chapter6Body {
-  background: #03050F;
+  background: #000312;
+}
+
+/* Based on ZURB */
+.bubbleGroup {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.bubbleForm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #131b4f;
+  position: fixed;
+  z-index: -4;
+  animation-name: bubbleFloat;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.bubble1 {
+  top: 100%; left: 15%;
+  animation-duration: 15s;
+}
+
+.bubble2 {
+  top: 75%; left: 22%;
+  animation-duration: 10s;
+}
+
+.bubble3 {
+  top: 90%; left: 58%;
+  animation-duration: 17s;
+}
+
+.bubble4 {
+  top: 60%; left: 75%;
+  animation-duration: 12s;
+}
+
+.bubble5 {
+  top: 80%; left: 85%;
+  animation-duration: 8s;
 }
 
 .introspectionImage {
@@ -464,7 +521,7 @@ i.far, i.fas {
 }
 
 .hiddenBow img {
-  opacity: 0;
+  opacity: 0.1;
   width: 50%;
   height: auto;
   transition: all .5s;
@@ -695,6 +752,20 @@ i.far, i.fas {
 
   to {
     width: 95%;
+  }
+}
+
+@keyframes bubbleFloat {
+  from {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  50% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-1000%);
   }
 }
 
